@@ -1,0 +1,17 @@
+extends layout
+
+
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 REGISTRO
+        form(method='POST' action='/')
+          div.form-group
+            label(for='rEmail') Email
+            input.form-control(type='text' id='Email' placeholder='Email' name='rEmail')
+          div.form-group
+            label(for='rPassword') Password
+            input.form-control(type='Password' id='rPassword' placeholder='Password' name='rPassword')
+          div
+            button.btn.btn-primary(type='submit') Registrarse
